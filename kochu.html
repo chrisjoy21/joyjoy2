@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kochu</title>
+    <!-- <style> -->
+        <!-- canvas{ -->
+            <!-- background-color: darkgreen; -->
+        <!-- } -->
+    <!-- </style> -->
+    <script>
+    //     console.log("hello world");
+    //     var a=12;
+    //     var b=56;
+    //    console.log(a+b);
+    //     document.write(a+b);
+    window.onload =function(){
+         var canvas=document.getElementById("mycanva");
+         var context=canvas.getContext("2d");
+        // // context.moveTo(600,800);
+        // context.lineTo(40,300);
+        // context.strokeStyle="brown"
+        context.arc(150,150,80,1.01* Math.PI,1* Math.PI,false);
+        context.fillStyle="red"
+        context.fill();
+         context.stroke();
+    }
+    </script>
+</head>
+<body>
+    <canvas id="mycanva"  class="c1"width="500px" height="500px"></canvas>
+
+</body>
+</html>
